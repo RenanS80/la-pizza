@@ -1,0 +1,67 @@
+.card {
+    width: 25.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 3rem 4rem 3rem;
+    background-color: var(--white-200);
+    border-radius: 2.5rem;
+    z-index: 999;
+}
+
+.card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pizza-image {
+    position: absolute;
+    top: -6rem;
+}
+
+.like-pizza-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2.2rem;
+    right: 1.5rem;
+    padding: 1rem;
+    background-color: var(--pink);
+    border: 0.2rem solid var(--red);
+    border-radius: 1.4rem;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.like-pizza-image:hover {
+    background-color: var(--yellow);
+}
+
+
+.card-info-container {
+    margin-top: 7.5rem;
+    text-align: center;
+}
+
+.card-info-container p {
+    margin-top: 0.8rem;
+    color: var(--gray);
+}
+
+.card-price {
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: -1.5rem;
+    padding: 1rem 2.8rem;
+    margin-top: 2rem;
+}

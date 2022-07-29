@@ -5,10 +5,13 @@
     --red: #CF3031;
     --yellow: #FFA200;
     --pink: #FFD4C9;
-    --white-200: #FEF6F4;
+    --white-200: #FFEAE5;
+    --white-300: #FAFAFA;
     --white: #FFF;
     --gray: #616161;
     --gray-200: #2E2E2E;
+
+    font-size: 62.5%;
 }
 
 * {
@@ -17,7 +20,206 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Sora', sans-serif;
     background-color: var(--white);
+    color: var(--gray-200);
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 9.6rem;
+    line-height: 12.1rem;
+    color: var(--white);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 4.5rem;
+}
+
+.btn {
+    background-color: var(--yellow);
+    border-radius: 2.5rem;
+    color: var(--gray-200);
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.btn:hover {
+    opacity: 0.88;
+}
+
+/* Hero section */
+.bg-hero {
+    background: url('./assets/img/pizza-background.png') no-repeat center;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow-color {
+    color: var(--yellow);
+}
+
+.red-color {
+    color: var(--red);
+}
+
+.green-color {
+    color: var(--green);
+}
+
+
+/* Main section */
+main {
+    position: relative;
+    height: 85vh;
+}
+
+.plant, .leaf,
+.fish, .mashroom,
+.pepper, .tomato {
+    position: absolute;
+}
+
+
+.plant {
+    top: -6rem;
+    left: 0;
+    filter: drop-shadow(0.1rem 0.5rem 1rem rgba(0, 0, 0, 0.24));
+}
+
+.leaf {
+    right: 33rem;
+    bottom: 35rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.7rem rgba(0, 0, 0, 0.45));
+}
+
+.fish {
+    top: 8rem;
+    left: 62rem;
+    filter: drop-shadow(0.4rem 0.2rem 0.6rem rgba(0, 0, 0, 0.43));
+}
+
+.mashroom {
+    top: 8.7rem;
+    right: 43rem;
+    filter: drop-shadow(0.4rem 0.1rem 0.6rem rgba(0, 0, 0, 0.25));
+}
+
+.pepper {
+    left: 10rem;
+    bottom: 8rem;
+}
+
+.tomato {
+    right: 35rem;
+    bottom: -6rem;
+    z-index: 9999;
+}
+
+.container {
+    padding: 14rem 1.5rem 2rem 1.5rem;
+    max-width: 112rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.best-seller {
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+}
+
+/* About section */
+.about {
+    background-color: var(--white-300);
+    position: relative;
+    height: 100%;
+    padding: 5rem 0;
+}
+
+.about .container {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9rem;
+}
+
+.about-image-container {
+    background: url('assets/img/about-restaurant.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 0.6rem;
+    position: relative;
+}
+
+.about-image-container .about-pizza-image {
+    position: absolute;
+    top: 2.5rem;
+    left: -7rem;
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0 0.3rem 0.3rem rgba(159, 62, 62, 0.25);
+    border-radius: 50%;
+}
+
+.about-info {
+    max-width: 46rem;
+    padding: 0 1.5rem;
+}
+
+.about-info h2 {
+    text-align: left;
+}
+
+.about-info p {
+    margin-top: 2.5rem;
+    line-height: 2.6rem;
+    color: var(--gray-200);
+}
+
+.read-more-btn {
+    padding: 1.2rem 3.6rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+}
+
+.about-pizza-taker-image {
+    position: absolute;
+    right: 50rem;
+    bottom: 5rem;
+}
+
+.about-pizza-taker-image img {
+    position: absolute;
+    bottom: 0;
 }

@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--white);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-transform: uppercase;
+    color: var(--gray-200);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
