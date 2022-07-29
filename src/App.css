@@ -87,7 +87,7 @@ h2 {
 /* Main section */
 main {
     position: relative;
-    height: 85vh;
+    padding-bottom: 20rem;
 }
 
 .plant, .leaf,
@@ -95,7 +95,6 @@ main {
 .pepper, .tomato {
     position: absolute;
 }
-
 
 .plant {
     top: -6rem;
@@ -137,6 +136,7 @@ main {
     max-width: 112rem;
     margin: 0 auto;
     height: 100%;
+    
 }
 
 .container h2 {
@@ -145,11 +145,9 @@ main {
 
 .best-seller {
     margin-top: 9rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2.2rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 256px);
+    justify-content: space-between;
 }
 
 /* About section */
@@ -222,4 +220,104 @@ main {
 .about-pizza-taker-image img {
     position: absolute;
     bottom: 0;
+}
+
+
+/* Media Queries */
+@media (max-width: 1629px) {
+    .fish {
+        left: 20rem;
+    }
+
+    .mashroom,
+    .tomato {
+        right: 20rem;
+    }
+
+    .pepper {
+        left: 5rem;
+    }
+
+    .leaf {
+        display: none;
+    }
+    
+    .about-pizza-taker-image {
+        right: 30rem;
+    }
+}
+
+@media (max-width: 1490px) {
+    .pepper {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    .about-pizza-taker-image {
+        display: none;
+    }
+}
+
+@media (max-width: 1055px) {
+    main {
+        padding-bottom: 7.9rem;
+    }
+    
+    .tomato,
+    .about-image-container .about-pizza-image {
+        display: none;
+    }
+
+    .best-seller {
+        row-gap: 11.5rem;
+    }
+
+    .about .container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-image-container {
+        width: 100%;
+    }
+
+    .about-info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 799px) {
+    .best-seller {
+        justify-content: space-around;
+    }
+
+    .fish,
+    .mashroom,
+    .about-image-container {
+        display: none;
+    }
+
+    .about-info,
+    .about-info h2  {
+        text-align: center;
+    }
+
+    .about-info {
+        margin-top: 3.2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .bg-hero {
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 7.2rem;
+    }
+    
+    .plant {
+        display: none;
+    }
 }

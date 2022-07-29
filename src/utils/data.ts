@@ -23,7 +23,7 @@ export const BestSeller = [
     {
         id: 4,
         name: 'La Toca',
-        description: 'Pizza de pepperoni com queijo mozzarella e manjericão',
+        description: 'Pizza de pepperoni com queijo mozzarella, tomate, manjericão e molho de tomate',
         img: 'https://ik.imagekit.io/zqxyh6u3ylz/La_Pizza/pizza-la-toca_1lqQVJwIL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659131613116',
         price: 49
     }
