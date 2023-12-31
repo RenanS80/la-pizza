@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
 
 :root {
-    --green: #5C913B;
+    --green: #60BB28;
     --red: #CF3031;
-    --yellow: #FFA200;
+    --yellow: #FFBD48;
     --pink: #FFD4C9;
     --white-200: #FFEAE5;
     --white-300: #FAFAFA;
@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
 }
 
 html {
@@ -25,7 +26,7 @@ html {
 }
 
 body {
-    font-family: 'Sora', sans-serif;
+
     background-color: var(--white);
     color: var(--gray-200);
     font-size: 1.6rem;
@@ -48,7 +49,6 @@ h2 {
     background-color: var(--yellow);
     border-radius: 2.5rem;
     color: var(--gray-200);
-    font-family: 'Sora', sans-serif;
     font-weight: 600;
     border: none;
     cursor: pointer;
@@ -136,7 +136,6 @@ main {
     max-width: 112rem;
     margin: 0 auto;
     height: 100%;
-    
 }
 
 .container h2 {
@@ -191,7 +190,7 @@ main {
 }
 
 .about-info {
-    max-width: 46rem;
+    max-width: 56rem;
     padding: 0 1.5rem;
 }
 
@@ -288,6 +287,21 @@ main {
 }
 
 @media (max-width: 799px) {
+    h1 {
+        font-size: 6rem;
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+    }
+    
+    .container {
+        padding: 8rem 1.5rem 2rem 1.5rem;
+        max-width: 112rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+
     .best-seller {
         justify-content: space-around;
     }

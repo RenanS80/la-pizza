@@ -1,6 +1,5 @@
 import { BestSeller } from 'utils/data';
 import Card from 'components/Card';
-import Footer from 'components/Footer';
 
 import Leaf from 'assets/img/leaf.png';
 import Plant from 'assets/img/plant.png';
@@ -62,10 +61,9 @@ function App() {
 
           <div className="about-info">
             <h2>Sobre a La P<span className="yellow-color">i</span><span className="red-color">z</span><span className="green-color">z</span>a</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis justo sem. Donec consequat, nunc a dapibus dapibus, justo dolor
-              tristique tortor, sit amet tincidunt lorem nisl at ex. Cras dolor purus, varius in euismod pretium, finibus nec mi. Curabitur aliquam
-              pharetra lectus in pharetra. Nullam viverra elementum neque quis fermentum.
+            <p>Bem-vindo ao "La Pizza", o seu refúgio acolhedor para uma experiência de pizzaria autêntica. Em nosso pequeno oásis italiano, 
+              cada pedaço de pizza é uma obra-prima artesanal. Sinta-se em casa enquanto o aroma sedutor de massa fresca assa no forno, 
+              criando as pizzas mais deliciosas da cidade.
             </p>
             <button className="btn read-more-btn">Leia mais</button>
           </div>
@@ -75,8 +73,6 @@ function App() {
           <img src={PizzaTaker} alt="Pizza Taker" />
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }
